@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AKAN NAME </title>
+    <script>
+        function calculate() {
+            var year = document.getElementById("year").value;
+            var month = document.getElementById("month").value;
+
+            parseInt(year);
+            newMonth = month.toLowerCase();
+
+            alert("Year :" + year + " Month : " + newMonth);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="year" placeholder="Eg: 1999">
+    <input type="text" id="month" placeholder="Eg: January ">
+    <button onclick="calculate()"> SUBMIT </button>
+</body>
+
+</html>
