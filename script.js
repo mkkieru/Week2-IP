@@ -1,4 +1,5 @@
 var yourName = document.getElementById("fname").Value;
-function name(){
+
+function name() {
     alert(yourName);
 }
