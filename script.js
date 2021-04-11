@@ -21,3 +21,16 @@ if (MM <= 0 || MM > 12) {
 
     var d = parseInt(index);
 }
+
+if (male.checked == true) {
+
+    alert("Your Akan name is " + Amale[d]);
+
+} else if (female.checked == true) {
+
+    alert("Your Akan name is " + Afemale[d]);
+
+} else {
+
+    alert("Please select your gender");
+}
