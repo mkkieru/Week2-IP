@@ -1,36 +1,49 @@
-var CC = document.getElementById("century").value;
-var YY = document.getElementById("year").value;
-var MM = document.getElementById("month").value;
-var DD = document.getElementById("day").value;
-var male = document.getElementById("male");
-var female = document.getElementById("female");
+function calculate() {
 
-var Amale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-var Afemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var CC = document.getElementById("century").value;
+    var YY = document.getElementById("year").value;
+    var MM = document.getElementById("month").value;
+    var DD = document.getElementById("day").value;
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
 
-if (MM <= 0 || MM > 12) {
+    var Amale = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var Afemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    alert("Please enter a valid month");
+    if (MM <= 0 || MM > 12) {
 
-} else if (DD <= 0 || DD > 31) {
+        alert("Please enter a valid month");
 
-    alert("Please enter a valid day");
+    } else if (DD <= 0 || DD > 31) {
 
-} else {
-    var index = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+        alert("Please enter a valid day");
 
-    var d = parseInt(index);
-}
+    } else {
+        var index = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
 
-if (male.checked == true) {
+        var d = parseInt(index);
 
-    alert("Your Akan name is " + Amale[d]);
+        /* CC - is the century digits. For example 1989 has CC = 19
+    
+        YY - is the Year digits (1989 has YY = 89)
+    
+        MM - is the Month
+    
+        DD - is the Day of the month 
+        */
+    }
 
-} else if (female.checked == true) {
+    if (male.checked == true) {
 
-    alert("Your Akan name is " + Afemale[d]);
+        alert("Your Akan name is " + Amale[d]);
 
-} else {
+    } else if (female.checked == true) {
 
-    alert("Please select your gender");
+        alert("Your Akan name is " + Afemale[d]);
+
+    } else {
+
+        alert("Please select your gender");
+    }
+
 }
