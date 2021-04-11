@@ -2,27 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>AKAN NAME </title>
-    <script>
-        function calculate() {
-            var year = document.getElementById("year").value;
-            var month = document.getElementById("month").value;
-            var gender = document.getElementById("gender").value;
-
-
-            parseInt(year);
-            newMonth = month.toLowerCase();
-            newGender =
-
-                alert("Year :" + year + " Month : " + newMonth);
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-    <input type="text" id="year" placeholder="Eg: 1999">
-    <input type="text" id="month" placeholder="Eg: January ">
-    <button onclick="calculate()"> SUBMIT </button>
+    <input style="height: 19px;" type="number" id="century" placeholder="Eg: 1989 = 19"><br>
+    <input style="height: 19px;" type="number" id="year" placeholder="Eg: 1989 = 89"><br>
+    <input style="height: 19px;" type="number" id="month" placeholder="Month"><br>
+    <input style="height: 19px;" type="number" id="day" placeholder="Day"><br>
+    <input style="height: 20px;" type="radio" name="gnd" id="male"> MALE</input><br>
+    <input style="height: 20px;" type="radio" name="gnd" id="female"> FEMALE</input><br>
 </body>
 
 </html>
