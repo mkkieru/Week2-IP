@@ -1,5 +1,8 @@
 # Akan Names
-Project entails boilerplate code for MPFT41/42 morning stand up session on remote repositories. Languages used are HTML and Custom CSS. Topics covered include HTML tags and Intro to CSS.
+This project entails building a system that takes the users' birthday as input using a form. This input is used to determine the users' Akan name then displays the name to the user. Topics covered include HTML tags and Intro to CSS.
+# About the author
+The author pf this project is Mark Kieru. He is an aspiring full-stack web developer.
+You can contact the author through his Email: mkieru55@gmail.com.
 ## Prerequisites
 Basic Git knowledge, including an installed version of Git.
 ##### Technologies Used
