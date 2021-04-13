@@ -51,24 +51,39 @@
                     <strong><em>Carefully fill in the form below then click the submit button to know your Akan name.</em></strong>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5">
+                    <!--<div class="col-sm-5">
                         CENTURY BORN <br> YEAR BORN <br> MONTH BORN <br> DAY OF THE MONTH <br>GENDER <br>
-                    </div>
+                    </div>-->
 
                     <div class="col-sm-5">
                         <div class="input">
+                            <!--<input style="height: 19px;" type="number" id="century" placeholder="Eg: 1989 = 19"><br>
+                                <input style="height: 19px;" type="number" id="year" placeholder="Eg: 1989 = 89"><br>
+                                <input style="height: 19px;" type="number" id="month" placeholder="Month"><br>
+                                <input style="height: 19px;" type="number" id="day" placeholder="Day"><br>
+                                <input style="height: 20px;" type="radio" name="gnd" id="male"> MALE</input><br>
+                                <input style="height: 20px;" type="radio" name="gnd" id="female"> FEMALE</input><br>-->
+                            <form id="myform">
+                                <label for="century">Enter century born: </label><br>
+                                <input style="height: 19px;" type="number" id="century" placeholder="Eg: 1989 = 19"><br>
+                                <label for="Year">Enter year born: </label><br>
+                                <input style="height: 19px;" type="number" id="year" placeholder="Eg: 1989 = 89"><br>
+                                <label for="month">Enter month born: </label><br>
+                                <input style="height: 19px;" type="number" id="month" placeholder="Month"><br>
+                                <label for="day">Enter the day of the month born: </label><br>
+                                <input style="height: 19px;" type="number" id="day" placeholder="Day"><br>
+                                <input style="height: 20px;" type="radio" name="gnd" id="male"> MALE</input><br>
+                                <input style="height: 20px;" type="radio" name="gnd" id="female"> FEMALE</input><br>
 
-                            <input style="height: 19px;" type="number" id="century" placeholder="Eg: 1989 = 19"><br>
-                            <input style="height: 19px;" type="number" id="year" placeholder="Eg: 1989 = 89"><br>
-                            <input style="height: 19px;" type="number" id="month" placeholder="Month"><br>
-                            <input style="height: 19px;" type="number" id="day" placeholder="Day"><br>
-                            <input style="height: 20px;" type="radio" name="gnd" id="male"> MALE</input><br>
-                            <input style="height: 20px;" type="radio" name="gnd" id="female"> FEMALE</input><br>
-
+                            </form>
                         </div>
                     </div>
+                    <div class="col-sm-6">
 
-                    <button onclick="calculate()"> SUBMIT </button>
+                        <p id="demo"></p>
+                        <button onclick="calculate()"> SUBMIT </button>
+
+                    </div>
                 </div>
 
             </div>
