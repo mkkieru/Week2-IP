@@ -50,5 +50,7 @@ function calculate() {
     document.getElementById("year").value = '';
     document.getElementById("month").value = '';
     document.getElementById("day").value = '';
+    male.checked = false;
+    female.checked = false;
 
 }
