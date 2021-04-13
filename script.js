@@ -35,15 +35,20 @@ function calculate() {
 
     if (male.checked == true) {
 
-        alert("Your Akan name is " + Amale[d]);
+        document.getElementById("demo").innerHTML = "Your Akan name is : " + Amale[d];
 
     } else if (female.checked == true) {
 
-        alert("Your Akan name is " + Afemale[d]);
+        document.getElementById("demo").innerHTML = "Your Akan name is : " + Afemale[d];
 
     } else {
 
         alert("Please select your gender");
     }
+
+    document.getElementById("century").value = '';
+    document.getElementById("year").value = '';
+    document.getElementById("month").value = '';
+    document.getElementById("day").value = '';
 
 }
